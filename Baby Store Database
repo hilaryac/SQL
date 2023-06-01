@@ -1,0 +1,47 @@
+--Create a baby store database
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, item TEXT, section TEXT, price INTEGER, popularity INTEGER);
+
+/** Baby Boutique:
+Baby Hat (Newborn) (Blue) (5) (12.99)
+Baby Bib (Small) (Grey) (7) (6.99)
+Baby Sleepsack (Small) (Pink) (6) (19.99)
+Baby Blanket (Onesize) (Yellow) (10) (21.99)
+Baby Soother (Newborn) (Blue) (12) (5.99)
+Baby Swaddle (Newborn) (Yellow) (9) (17.99)
+Baby Bottles Pk (Newborn) (Clear) (6) (12.99)
+Baby Stuffy Elephant (Onesize) (Grey) (5) (23.00)
+Baby First Xmas Orn (Onesize) (Green) (10) (13.99)
+Baby Mobile (Onesize) (Multi) (8) (23.99)
+Baby Socks (Small) (Blue) (10) (6.99)
+Baby Snowsuit (Small) (Blue) (6) (19.99)
+Baby Snowsuit (Medium) (Blue) (7) (19.99)
+Baby Sleepsack (Medium) (Yellow) (7) (19.99)
+Baby Onesie (Small) (White) (8) (15.99)
+**/
+
+CREATE TABLE Stock (id INTEGER PRIMARY KEY, name TEXT, size TEXT, color TEXT, quantity INTEGER, price INTEGER );
+
+INSERT INTO stock VALUES (1, "Baby Hat", "Newborn", "Blue", 5, 12.99);
+INSERT INTO stock Values (2, "Baby Bib", "Small", "Grey", 7, 6.99);
+INSERT INTO stock VALUES (3, "Baby Sleepsack", "Small", "Pink", 6, 19.99);
+INSERT INTO stock VALUES (4, "Baby Blanket", "Onesize", "Yellow", 9, 17.99);
+INSERT INTO stock VALUES (5, "Baby Soother", "Newborn", "Blue", 12, 5.99);
+INSERT INTO stock VALUES (6, "Baby Swaddle", "Newborn", "Yellow", 9, 17.99);
+INSERT INTO stock VALUES (7, "Baby Bottles Pk", "Newborn", "Clear", 6, 12.99);
+INSERT INTO stock VALUES (8, "Baby Stuffy Elephant", "Onesize", "Grey", 5, 23.75);
+INSERT INTO stock VALUES (9, "Baby First Xmas Orn", "Onesize", "Green", 10, 13.99);
+INSERT INTO stock VALUES (10, "Baby Mobile", "Onesize", "Multi", 8, 23.99);
+INSERT INTO stock VALUES (11, "Baby Socks", "Small", "Blue", 10, 6.99);
+INSERT INTO stock VALUES (12, "Baby Snowsuit", "Small", "Blue", 6, 19.99);
+INSERT INTO stock VALUES (13, "Baby Snowsuit", "Medium", "Blue", 7, 19.99);
+INSERT INTO stock VALUES (14, "Baby Sleepsack", "Medium", "Yellow", 7, 19.99);
+INSERT INTO stock VALUES (15, "Baby Onesie", "Small", "White", 8, 15.99);
+
+--display the database
+SELECT * FROM Stock;
+
+--display the database ordered by price
+SELECT name, size, price FROM stock ORDER BY price asc; 
+
+
